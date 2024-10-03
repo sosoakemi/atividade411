@@ -1,26 +1,114 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Titillium Web', sans-serif;
 }
 
-header{
+body {
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+:root {
+    --cor-nav: #f06cc1;
+}
 
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,0.9051995798319328) 0%, rgba(238,106,229,1) 35%, rgba(212,139,209,1) 100%);
-    background-size: cover;
-    height: 8.375rem;
-
+header {
+    background-image: linear-gradient(to right bottom, #f83cb7, #f06cc1, #e78ec9, #deabce, #d4c6d0);
+    height: 8rem;
     display: flex;
     justify-content: center;
-    align-items: center; 
-    margin-bottom: 3.7rem;
-}  
-main{
-    padding-inline: 1.5rem;
+    align-items: center;
 }
 
-.imagem{
-    width: 5rem;
+header h1 {
+    color: rgb(0, 0, 0);
+}
+nav {
+    width: 100%;
+    background-color: var(--cor-nav);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav button {
+    border-radius: 5rem;
+    background-color: #d8d8d8d5;
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilo da primeira div */
+.primeira {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.primeira img {
+    
+    width: 20rem;
+    margin-right: 6rem;
+    margin-left: 5rem;
+}
+
+.primeira p {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+/* Estilo da segunda div */
+.segunda {
+    background-image: linear-gradient(to right bottom, #f83cb7, #f06cc1, #e78ec9, #deabce, #d4c6d0);
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.segunda img {
+    width: 20rem;
+    height: 10rem;
+    margin-right: 5rem;
+    margin-left: 5rem ;
+}
+
+.segunda p {
+    max-width: 20rem;
+}
+
+/* Estilo da terceira div */
+.terceira {
+    background-image: linear-gradient(to right bottom, #f83cb7, #f06cc1, #e78ec9, #deabce, #d4c6d0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.terceira img {
+    width: 12rem; 
+    height: 12rem; 
+    margin-top: 1rem; 
 }
