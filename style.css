@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+header{
+
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.9051995798319328) 0%, rgba(238,106,229,1) 35%, rgba(212,139,209,1) 100%);
+    background-size: cover;
+    height: 8.375rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 3.7rem;
+}  
+main{
+    padding-inline: 1.5rem;
+}
+
+.imagem{
+    width: 5rem;
+}
